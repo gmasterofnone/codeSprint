@@ -15,7 +15,7 @@ export default class Mission {
 
   buildRovers(roversData) {
     let rovers = []
-    for (let i = 0; i <= roversData.length / 2; i++) {
+    for (let i = 0; i = roversData.length / 2; i++) {
       const roverData = roversData.splice(0, 2)
       const position = roverData[0].split(' ')
       new Rover(position, roverData[1], this.grid)
